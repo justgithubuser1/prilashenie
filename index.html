@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Евгений & Валерия | Свадебное приглашение</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient"></div>
+    <main class="invitation" aria-label="Свадебное приглашение">
+      <div class="swiper wedding-swiper">
+        <div class="swiper-wrapper">
+          <section class="swiper-slide slide cover-slide">
+            <div class="parallax-bg hero-bg" data-swiper-parallax="-22%"></div>
+            <div class="shade"></div>
+            <div class="slide-content center">
+              <p class="eyebrow reveal">Свадебное приглашение</p>
+              <div class="couple-photo reveal">
+                <img src="assets/couple-real.webp" alt="Евгений и Валерия" />
+              </div>
+              <h1 class="names reveal">Евгений<br />&<br />Валерия</h1>
+              <p class="subtitle reveal">28 августа 2026</p>
+              <button class="ghost-button reveal" type="button" data-next>
+                Открыть приглашение
+              </button>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide details-slide">
+            <div class="parallax-bg details-bg" data-swiper-parallax="-18%"></div>
+            <div class="shade light"></div>
+            <div class="slide-content">
+              <p class="eyebrow reveal">Мы ждем вас</p>
+              <h2 class="reveal">28 августа 2026</h2>
+              <div class="info-list reveal">
+                <div>
+                  <span>Начало дня / ЗАГС</span>
+                  <strong>11:00</strong>
+                </div>
+                <div>
+                  <span>Церемония</span>
+                  <strong>15:30</strong>
+                </div>
+                <div>
+                  <span>Банкет</span>
+                  <strong>16:00</strong>
+                </div>
+                <div>
+                  <span>Место</span>
+                  <strong>Ресторан «Моне»</strong>
+                </div>
+                <div>
+                  <span>Адрес</span>
+                  <strong>Бийск, ул. Ивана Крылова, 32к2</strong>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide timer-slide">
+            <div class="texture-bg" data-swiper-parallax="-10%"></div>
+            <div class="slide-content center">
+              <p class="eyebrow reveal">До свадьбы осталось</p>
+              <div class="countdown reveal" aria-live="polite">
+                <div><strong id="days">00</strong><span>дней</span></div>
+                <div><strong id="hours">00</strong><span>часов</span></div>
+                <div><strong id="minutes">00</strong><span>минут</span></div>
+                <div><strong id="seconds">00</strong><span>секунд</span></div>
+              </div>
+              <p class="note reveal">Будем счастливы разделить этот день с вами.</p>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide schedule-slide">
+            <div class="slide-content">
+              <p class="eyebrow reveal">Программа дня</p>
+              <h2 class="reveal">Мягкий ритм праздника</h2>
+              <ol class="timeline reveal">
+                <li><time>11:00</time><span>Сбор гостей в ЗАГСе</span></li>
+                <li><time>12:00</time><span>Фотосессия в Белокурихе</span></li>
+                <li><time>15:30</time><span>Церемония в ресторане «Моне»</span></li>
+                <li><time>16:00</time><span>Начало банкета</span></li>
+                <li><time>вечер</time><span>Ужин, поздравления и праздник</span></li>
+              </ol>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide map-slide">
+            <div class="slide-content">
+              <p class="eyebrow reveal">Локация</p>
+              <h2 class="reveal">Ресторан «Моне»</h2>
+              <p class="note reveal">Бийск, ул. Ивана Крылова, 32к2</p>
+              <div class="map-frame reveal">
+                <iframe
+                  title="Карта места проведения"
+                  src="https://maps.google.com/maps?q=52.5224671,85.2445420&z=17&output=embed"
+                  loading="lazy">
+                </iframe>
+              </div>
+              <a class="text-link reveal" href="https://www.google.com/maps/search/?api=1&query=52.5224671%2C85.2445420" target="_blank" rel="noreferrer">
+                Открыть карту
+              </a>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide gallery-slide">
+            <div class="slide-content">
+              <p class="eyebrow reveal">Наша история</p>
+              <h2 class="reveal">Несколько теплых мгновений</h2>
+              <div class="gallery reveal">
+                <img src="assets/couple-real.webp" alt="Евгений и Валерия" />
+                <img src="assets/wedding-details.webp" alt="Свадебные кольца и цветы" />
+              </div>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide rsvp-slide">
+            <div class="parallax-bg details-bg soft" data-swiper-parallax="-14%"></div>
+            <div class="shade"></div>
+            <div class="slide-content">
+              <p class="eyebrow reveal">RSVP</p>
+              <h2 class="reveal">Подтвердите присутствие</h2>
+              <form class="rsvp-form reveal" id="rsvpForm">
+                <label>
+                  <span>Ваше имя</span>
+                  <input name="name" type="text" placeholder="Например, Екатерина" required />
+                </label>
+                <label>
+                  <span>Вы сможете прийти?</span>
+                  <select name="attendance" required>
+                    <option value="">Выберите ответ</option>
+                    <option>Да, с радостью</option>
+                    <option>К сожалению, не получится</option>
+                  </select>
+                </label>
+                <label>
+                  <span>Комментарий</span>
+                  <textarea name="message" rows="3" placeholder="Пожелания по меню или имя вашего спутника"></textarea>
+                </label>
+                <button type="submit">Отправить ответ</button>
+                <p class="form-status" id="formStatus" role="status"></p>
+              </form>
+            </div>
+          </section>
+
+          <section class="swiper-slide slide contacts-slide">
+            <div class="slide-content center">
+              <p class="eyebrow reveal">Контакты</p>
+              <h2 class="reveal">До встречи на празднике</h2>
+              <div class="contacts reveal">
+                <a href="tel:+79990000000">+7 999 000-00-00</a>
+                <a href="mailto:wedding@example.com">wedding@example.com</a>
+                <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+              </div>
+              <p class="note reveal">Пожалуйста, дайте ответ до 1 августа 2026.</p>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-pagination"></div>
+        <button class="nav-button prev" type="button" aria-label="Предыдущий слайд"></button>
+        <button class="nav-button next" type="button" aria-label="Следующий слайд"></button>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
